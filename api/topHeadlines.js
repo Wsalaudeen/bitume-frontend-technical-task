@@ -17,7 +17,6 @@ export default async function handler(req, res) {
   try {
     const { country = "us", category, pageSize = 20 } = req.query;
 
-    // Build URL with parameters
     let url = `https://newsapi.org/v2/top-headlines?country=${country}&pageSize=${pageSize}&apiKey=${API_KEY}`;
 
     if (category && category !== "all") {
