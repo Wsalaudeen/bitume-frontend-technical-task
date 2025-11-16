@@ -3,7 +3,7 @@ import { categories } from "../constants/categories";
 
 const CategoryFilter = ({ selectedCategory, onCategoryChange }) => {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <section className="bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-4 sm:py-6">
           <div className="flex items-center space-x-2 sm:space-x-3 overflow-x-auto scrollbar-hide pb-2 sm:pb-0">
@@ -23,7 +23,7 @@ const CategoryFilter = ({ selectedCategory, onCategoryChange }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

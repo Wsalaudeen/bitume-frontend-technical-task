@@ -53,7 +53,7 @@ const SingleArticle = ({ articles }) => {
   };
 
   return (
-    <div
+    <section
       className={`min-h-screen bg-gray-50 dark:bg-gray-900 ${
         darkMode ? "dark" : ""
       }`}
@@ -230,7 +230,7 @@ const SingleArticle = ({ articles }) => {
           </div>
         )}
       </article>
-    </div>
+    </section>
   );
 };
 

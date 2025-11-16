@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-const LoadingSpinner = ({ size = 'default' }) => {
+const LoadingSpinner = ({ size = "default" }) => {
   const sizeClasses = {
-    small: 'w-4 h-4',
-    default: 'w-8 h-8',
-    large: 'w-12 h-12'
+    small: "w-4 h-4",
+    default: "w-8 h-8",
+    large: "w-12 h-12",
   };
 
   return (
@@ -18,7 +18,7 @@ const LoadingSpinner = ({ size = 'default' }) => {
 
 export const LoadingCards = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {[...Array(6)].map((_, index) => (
         <div key={index} className="news-card overflow-hidden animate-pulse">
           <div className="aspect-video bg-gray-200"></div>
@@ -47,13 +47,8 @@ export const LoadingCards = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
 export default LoadingSpinner;
-
-
-
-
-
