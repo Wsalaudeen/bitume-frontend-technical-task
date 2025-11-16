@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0f9589d0-50ee-48b8-9861-7b631823fda2" /># News Today - React News Feed Application
+## News Today - React News Feed Application
 
 A modern, responsive news feed application built with React, Tailwind CSS, and the News API. Features real-time news updates, search functionality, and category filtering.
 
@@ -141,6 +141,7 @@ This project is licensed under the MIT License.
 - [News API](https://newsapi.org) for providing news data
 - [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
 - [Lucide](https://lucide.dev) for the beautiful icons
+
 
 
 
