@@ -4,18 +4,18 @@ A modern, responsive news feed application built with React, Tailwind CSS, and t
 
 ## Features
 
-- 📰 Latest news headlines from multiple sources
-- 🔍 Real-time search functionality
-- 📱 Fully responsive design
-- 🎯 Category-based filtering
-- ⚡ Fast loading with skeleton screens
-- 🎨 Modern UI with Tailwind CSS
-- 🌙 Dark mode support
-- ❤️ Interactive engagement features
+-   Latest news headlines from multiple sources
+-   Real-time search functionality
+-   Fully responsive design
+-   Category-based filtering
+-   Fast loading with skeleton screens
+-  Modern UI with Tailwind CSS
+-   Dark mode support
+-  Interactive engagement features
 
 ## Tech Stack
 
-- **React 18** - Frontend framework
+- **React ** - Frontend framework
 - **Tailwind CSS v3** - Styling and responsive design
 - **Axios** - HTTP client for API requests
 - **Vite** - Build tool and development server
@@ -129,6 +129,7 @@ This project is licensed under the MIT License.
 - [News API](https://newsapi.org) for providing news data
 - [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
 - [Lucide](https://lucide.dev) for the beautiful icons
+
 
 
 
