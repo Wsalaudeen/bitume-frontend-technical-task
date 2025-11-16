@@ -74,17 +74,24 @@ The application uses the News API with the following endpoints:
 ```
 src/
 ├── components/
-│   ├── Header.jsx          # Navigation header
-│   ├── SearchBar.jsx       # Search functionality
-│   ├── CategoryFilter.jsx  # Category filtering
-│   ├── NewsCard.jsx        # Individual news article card
-│   ├── LoadingSpinner.jsx  # Loading states
-│   └── ErrorState.jsx      # Error handling
+│   ├── Header.jsx             # Navigation header
+│   ├── SearchBar.jsx          # Search functionality
+│   ├── CategoryFilter.jsx     # Category filtering
+│   ├── NewsCard.jsx           # Individual news article card
+│   ├── LoadingSpinner.jsx     # Loading state component
+│   └── ErrorState.jsx         # Error handling component
+│
 ├── services/
-│   └── newsApi.js          # API integration
-├── App.jsx                 # Main application component
-├── main.jsx               # Application entry point
-└── index.css              # Global styles
+│   └── newsApi.js             # API integration layer
+│
+├── App.jsx                    # Main application component
+├── main.jsx                   # Application entry point
+└── index.css                  # Global styles
+
+api/
+├── topHeadlines.js            # Serverless function for fetching top headlines
+└── searchNews.js              # Serverless function for handling search queries
+
 ```
 
 ## Features in Detail
@@ -120,6 +127,13 @@ src/
 4. Add tests if applicable
 5. Submit a pull request
 
+##Lighthouse Report
+This project was built with performance, accessibility, and best practices as top priorities.
+The deployed version was audited using Google Lighthouse (Chrome DevTools), and the results are shown in the screenshot below.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/878464b5-2c2d-4de9-9386-7be4b14752a9" />
+
+
+
 ## License
 
 This project is licensed under the MIT License.
@@ -129,6 +143,7 @@ This project is licensed under the MIT License.
 - [News API](https://newsapi.org) for providing news data
 - [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
 - [Lucide](https://lucide.dev) for the beautiful icons
+
 
 
 
