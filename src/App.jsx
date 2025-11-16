@@ -24,7 +24,7 @@ function App() {
   } = useNews();
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+    <section className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
       <SearchBar
@@ -95,7 +95,7 @@ function App() {
       </main>
 
       <Footer />
-    </div>
+    </section>
   );
 }
 
