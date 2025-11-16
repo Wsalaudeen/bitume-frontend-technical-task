@@ -34,8 +34,8 @@ A modern, responsive news feed application built with React, Tailwind CSS, and t
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd news-today
+git clone https://github.com/Wsalaudeen/bitume-frontend-technical-task.git
+cd news
 ```
 
 2. Install dependencies:
@@ -141,6 +141,7 @@ This project is licensed under the MIT License.
 - [News API](https://newsapi.org) for providing news data
 - [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
 - [Lucide](https://lucide.dev) for the beautiful icons
+
 
 
 
