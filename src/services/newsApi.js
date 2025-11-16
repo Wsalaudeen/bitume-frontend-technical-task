@@ -87,7 +87,7 @@ export const fetchTopHeadlines = async (category = "", country = "us") => {
     }
 
     // Different endpoints for dev vs production
-    const endpoint = isDevelopment ? "/top-headlines" : "/top-headlines";
+    const endpoint = isDevelopment ? "/top-headlines" : "/topHeadlines";
     const response = await newsApi.get(endpoint, { params });
     return response.data;
   } catch (error) {
@@ -99,7 +99,7 @@ export const fetchTopHeadlines = async (category = "", country = "us") => {
 export const searchNews = async (query, searchIn = "title,content") => {
   try {
     const response = await newsApi.get(
-      isDevelopment ? "/everything" : "/search-news",
+      isDevelopment ? "/everything" : "/searchNews",
       {
         params: {
           q: query,
