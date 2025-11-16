@@ -120,7 +120,7 @@ api/
 - Retry functionality
 
 
-##Lighthouse Report
+## Lighthouse Report
 
 
 This project was built with performance, accessibility, and best practices as top priorities.
@@ -141,6 +141,7 @@ This project is licensed under the MIT License.
 - [News API](https://newsapi.org) for providing news data
 - [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
 - [Lucide](https://lucide.dev) for the beautiful icons
+
 
 
 
