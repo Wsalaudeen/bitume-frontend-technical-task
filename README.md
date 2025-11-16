@@ -1,4 +1,4 @@
-# News Today - React News Feed Application
+## News Today - React News Feed Application
 
 A modern, responsive news feed application built with React, Tailwind CSS, and the News API. Features real-time news updates, search functionality, and category filtering.
 
@@ -34,8 +34,8 @@ A modern, responsive news feed application built with React, Tailwind CSS, and t
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd news-today
+git clone https://github.com/Wsalaudeen/bitume-frontend-technical-task.git
+cd news
 ```
 
 2. Install dependencies:
@@ -74,17 +74,24 @@ The application uses the News API with the following endpoints:
 ```
 src/
 ├── components/
-│   ├── Header.jsx          # Navigation header
-│   ├── SearchBar.jsx       # Search functionality
-│   ├── CategoryFilter.jsx  # Category filtering
-│   ├── NewsCard.jsx        # Individual news article card
-│   ├── LoadingSpinner.jsx  # Loading states
-│   └── ErrorState.jsx      # Error handling
+│   ├── Header.jsx             # Navigation header
+│   ├── SearchBar.jsx          # Search functionality
+│   ├── CategoryFilter.jsx     # Category filtering
+│   ├── NewsCard.jsx           # Individual news article card
+│   ├── LoadingSpinner.jsx     # Loading state component
+│   └── ErrorState.jsx         # Error handling component
+│
 ├── services/
-│   └── newsApi.js          # API integration
-├── App.jsx                 # Main application component
-├── main.jsx               # Application entry point
-└── index.css              # Global styles
+│   └── newsApi.js             # API integration layer
+│
+├── App.jsx                    # Main application component
+├── main.jsx                   # Application entry point
+└── index.css                  # Global styles
+
+api/
+├── topHeadlines.js            # Serverless function for fetching top headlines
+└── searchNews.js              # Serverless function for handling search queries
+
 ```
 
 ## Features in Detail
@@ -112,13 +119,18 @@ src/
 - Error state handling
 - Retry functionality
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+## Lighthouse Report
+
+
+This project was built with performance, accessibility, and best practices as top priorities.
+The deployed version was audited using Google Lighthouse (Chrome DevTools), and the results are shown in the screenshot below.
+
+<img width="1366" height="697" alt="image" src="https://github.com/user-attachments/assets/efb44cb1-b36a-45a8-8b6e-96e8359aa321" />
+
+
+
+
 
 ## License
 
@@ -129,6 +141,13 @@ This project is licensed under the MIT License.
 - [News API](https://newsapi.org) for providing news data
 - [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
 - [Lucide](https://lucide.dev) for the beautiful icons
+
+
+
+
+
+
+
 
 
 
