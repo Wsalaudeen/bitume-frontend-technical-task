@@ -176,24 +176,24 @@ const SingleArticle = ({ articles }) => {
                 const currentIndex = parseInt(id);
                 const currentArticle = articles[currentIndex];
 
-                // Get articles that are not the current one
+               
                 const otherArticles = articles
                   .map((article, index) => ({ article, index }))
                   .filter(({ index }) => index !== currentIndex);
 
-                // Try to find articles from the same source first
+            
                 const sameSourceArticles = otherArticles.filter(
                   ({ article }) =>
                     article.source?.name === currentArticle?.source?.name
                 );
 
-                // If we have same source articles, prioritize them
+          
                 let relatedArticles = [];
                 if (sameSourceArticles.length > 0) {
                   relatedArticles.push(...sameSourceArticles.slice(0, 1));
                 }
 
-                // Fill remaining slots with other articles
+           
                 const remainingSlots = 2 - relatedArticles.length;
                 if (remainingSlots > 0) {
                   const otherDifferentArticles = otherArticles.filter(
@@ -205,7 +205,7 @@ const SingleArticle = ({ articles }) => {
                   );
                 }
 
-                // If still not enough, fill with any remaining articles
+              
                 if (relatedArticles.length < 2) {
                   const remaining = otherArticles.filter(
                     ({ index }) =>

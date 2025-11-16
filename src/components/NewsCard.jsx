@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ExternalLink, Clock, Heart, MessageCircle, Share } from "lucide-react";
+import { Clock, Heart, MessageCircle, Share } from "lucide-react";
 import { useReadMore } from "../hooks/useReadMore";
 import { formatDate } from "../utils/dateUtils";
 
@@ -116,6 +116,7 @@ const NewsCard = ({ article, isLarge = false, articleIndex }) => {
             <button
               className="flex items-center space-x-1 hover:text-primary-600 transition-colors"
               onClick={(e) => e.stopPropagation()}
+              aria-label="share"
             >
               <Share className="w-4 h-4" />
             </button>
